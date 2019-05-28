@@ -9,14 +9,10 @@
     <script src="Scripts/jquery-3.0.0.min.js"></script>
     <link rel="stylesheet" href="Style/HomePageStyle.css">
     <title>GameEkstra | Oyuncuların Güvenilir Marketi</title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
 </head>
 <body> 
     <form id="form1" runat="server">
         <div id="container">
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
             <div id="header">
                 <div class="logo">
                     <a href="HomePage.aspx"><img src="images/logo.png" alt="Logo"></a>
@@ -30,12 +26,13 @@
                     </form>
                 </div>
                 <div class="headerRight">
-                        <asp:Button Text="Kayıt Ol" runat="server" />
+                        <asp:Button Text="Sepetim" runat="server" />
                         <asp:Button Text="Giriş Yap" runat="server" />
                 </div>
             </div>
             <div id="contain">
-
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
             </div>
             <div id="footer">
 
