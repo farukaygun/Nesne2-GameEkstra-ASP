@@ -58,6 +58,24 @@ namespace GameEkstra {
         protected global::System.Web.UI.WebControls.TextBox textBoxSurname;
         
         /// <summary>
+        /// lblTCNO denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik üretilmiş alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTCNO;
+        
+        /// <summary>
+        /// textBoxTCNo denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik üretilmiş alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox textBoxTCNo;
+        
+        /// <summary>
         /// lblEmail denetimi.
         /// </summary>
         /// <remarks>

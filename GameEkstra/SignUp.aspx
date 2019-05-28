@@ -13,6 +13,10 @@
             <asp:TextBox ID="textBoxSurname" runat="server"></asp:TextBox>
         </div>
         <div>
+            <asp:Label ID="lblTCNO" runat="server" Text="TC No"></asp:Label>
+            <asp:TextBox ID="textBoxTCNo" runat="server"></asp:TextBox>
+        </div>
+        <div>
             <asp:Label ID="lblEmail" runat="server" Text="Email"></asp:Label>
             <asp:TextBox ID="textBoxEmail" runat="server"></asp:TextBox>
         </div>
@@ -34,7 +38,7 @@
             <asp:TextBox ID="textBoxAddress" runat="server"></asp:TextBox>
         </div>
         <div>
-            <asp:Button ID="btnSignUp" runat="server" Text="Üye Ol" />
+            <asp:Button ID="btnSignUp" runat="server" Text="Üye Ol" OnClick="btnSignUp_Click" />
         </div>
     </div>
 </asp:Content>

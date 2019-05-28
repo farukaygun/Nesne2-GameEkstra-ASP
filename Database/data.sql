@@ -6,12 +6,11 @@ GO
 
 CREATE TABLE tblUser
 (
-    TCNO INT PRIMARY KEY IDENTITY(1,1),
-    username NVARCHAR(25),
-    password PASSWORD,
     name NVARCHAR(25),
     surname NVARCHAR(25),
+    TCNO INT PRIMARY KEY IDENTITY(1,1),
     mail NVARCHAR(50),
+    password PASSWORD,
     phone INT,
     address TEXT,
 )
@@ -22,11 +21,4 @@ CREATE TABLE tblProduct
     name NVARCHAR(25),
     price MONEY,
     image IMAGE
-)
-
-CREATE TABLE UserBuyProduct
-(
-    TCNO INT FOREIGN KEY REFERENCES tblUser(TCNO),
-    ID INT FOREIGN KEY REFERENCES tblProduct(ID),
-    adet INT
 )

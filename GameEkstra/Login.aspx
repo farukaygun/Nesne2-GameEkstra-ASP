@@ -11,10 +11,10 @@
             <asp:TextBox ID="textBoxSifre" runat="server" Text="Şifre"></asp:TextBox>
         </div>
         <div>
-            <asp:Button ID="btnLogin" runat="server" Text="Giriş Yap" />
+            <asp:Button ID="btnLogin" runat="server" Text="Giriş Yap" OnClick="btnLogin_Click" />
         </div>  
         <div>
-            <asp:Button ID="btnSignUp" runat="server" Text="Yeni Üyelik" />
+            <asp:Button ID="btnSignUp" runat="server" Text="Yeni Üyelik" OnClick="btnSignUp_Click" />
         </div>
     </div>
 </asp:Content>

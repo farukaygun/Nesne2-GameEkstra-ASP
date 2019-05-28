@@ -13,5 +13,15 @@ namespace GameEkstra
         {
 
         }
+
+        protected void btnLogin_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/Login.aspx");
+        }
+
+        protected void btnMyCart_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/Cart.aspx");
+        }
     }
 }
