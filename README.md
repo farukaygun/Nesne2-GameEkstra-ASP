@@ -2,4 +2,5 @@
 
 Gereksinimler
 
-Boostrap NuGet paketi.
+Boostrap NuGet paketi,
+Credit Card Valudater NuGet paketi,
