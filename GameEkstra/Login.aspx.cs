@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -24,18 +25,63 @@ namespace GameEkstra
         {
             //SERVER ADINI DEĞİŞTİR
             
-            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-U8BS5U6\\SQLEXPRESS; Initial Catalog= forum; Integrated Security=True");
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-0TAUNLF; Initial Catalog=GameEkstraDatabase; Integrated Security=True");
+            SqlConnection conn2 = new SqlConnection("Data Source=DESKTOP-0TAUNLF; Initial Catalog=GameEkstraDatabase; Integrated Security=True");
             conn.Open();
-            SqlCommand komut = new SqlCommand("select mail from tblUser where mail='" + textBoxEmail.Text + "'", conn);
-            SqlCommand komut2 = new SqlCommand("select password from tblKullanici where password='" + textBoxSifre.Text + "'", conn);
-            SqlCommand kmt = new SqlCommand();           
-            if (komut != null && komut2 != null)
+            conn2.Open();
+            SqlCommand cmd = new SqlCommand();
+            SqlCommand cmd2 = new SqlCommand();
+            cmd.Connection = conn;
+            cmd2.Connection = conn2;
+            cmd.CommandText = "SELECT mail FROM tblUser";
+            cmd2.CommandText = "SELECT sifre FROM tblUser";
+            SqlDataReader dr = cmd.ExecuteReader();
+            SqlDataReader dr2 = cmd2.ExecuteReader();
+            ArrayList Mailler = new ArrayList();
+            ArrayList Sifreler = new ArrayList();
+            while (dr.Read())
+            {
+                Mailler.Add(dr["mail"]);
+            }
+            while (dr2.Read())
+            {
+                Sifreler.Add(dr2["sifre"]);
+            }
+            foreach (string item in Mailler)
+            {
+                if (item == textBoxEmail.Text)
+                {
+                    foreach(string sifre in Sifreler)
+                    {
+                        if(sifre == textBoxSifre.Text)
+                        {
+                            Session.Timeout = 120;
+                            Session.Add("oturum", textBoxEmail.Text);
+                            Response.Redirect("/HomePage.aspx");
+                        }
+                        else
+                        {
+                            Response.Redirect("/Login.aspx");
+                        }
+                    }
+                }
+                else
+                {
+                    Response.Redirect("/Login.aspx");
+                }
+            }
+
+           /* if (dr != null && komut2 != null)
             {
                 Session.Timeout = 120;
                 Session.Add("oturum", textBoxEmail.Text);
+                Response.Redirect("/HomePage.aspx");
             }
-            Response.Redirect("/HomePage.aspx");
-            conn.Close();
+            else
+            {
+                Response.Redirect("/Login.aspx");
+            }
+            conn.Close();*/
         }
     }
 }

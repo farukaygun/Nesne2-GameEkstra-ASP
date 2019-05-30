@@ -1,0 +1,159 @@
+﻿.UrunFoto{
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    display:inline-block;
+    border:none;
+    margin:auto;
+    max-width:100%;
+    max-height:100%
+}
+
+.UrunAlanı {
+    margin:auto;
+    position:relative;
+    width:270px;
+    height:396px;
+    padding:10px;
+    border:1px solid #e5e7f2;
+    box-sizing: border-box;
+    transition: .2s linear;
+}
+
+.UrunYazısı{
+    display:block;
+    line-height:17px;
+    color:#3c3c3c;
+    font-size:13px;
+}
+
+.UrunFiyat{
+    line-height:29px;
+    color:#3c3c3c;
+    font-size:16px;
+    font-weight:700;
+    letter-spacing:-.5px;
+}
+
+.SepeteEkle {
+    position: relative;
+    display: block;
+    width: 0;
+    height: 0;
+    padding: 39px 0 0 113px;
+    background: url(//st2.myideasoft.com/shop/br/89/themes/selftpl_3/assets/images/addtocart.png?revision=1528470272);
+}
+
+.UyeGirisi {
+    display: block;
+    width: 140px;
+    height: 52px;
+    line-height: 50px;
+    color: #3c3c3c;
+    font-size: 13px;
+    font-weight: 600;
+    padding-left: 57px;
+    box-sizing: border-box;
+    border: 1px solid #d0d3e1;
+    background-color: #fff;
+    background-image: url(//st2.myideasoft.com/shop/br/89/themes/selftpl_3/assets/images/icon_user.png?revision=6.4.1.4-1539265588);
+    background-repeat:no-repeat;
+    background-position:24px center;
+    transition:.2s linear;
+}
+
+.Sepet {
+    position: relative;
+    display: block;
+    width: 140px;
+    height: 52px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 0 0 0 64px;
+    box-sizing: border-box;
+    border: 1px solid #d1007c;
+    background: #ec008c url(//st3.myideasoft.com/shop/br/89/themes/selftpl_3/assets/images/icon_cart.png?revision=6.4.1.4-1539265588) no-repeat 21px center;
+    -webkit-transition: .2s linear;
+    -moz-transition: .2s linear;
+    transition: .2s linear;
+}
+
+.CikisYap {
+    display: block;
+    width: 140px;
+    height: 52px;
+    line-height: 50px;
+    color: #3c3c3c;
+    font-size: 13px;
+    font-weight: 600;
+    padding-left: 57px;
+    box-sizing: border-box;
+    border: 1px solid #d0d3e1;
+    background-color: #fff;
+    background-image: url(//st2.myideasoft.com/shop/br/89/themes/selftpl_3/assets/images/icon_user.png?revision=6.4.1.4-1539265588);
+    background-repeat: no-repeat;
+    background-position: 24px center;
+    -webkit-transition: .2s linear;
+    -moz-transition: .2s linear;
+    transition: .2s linear;
+}
+
+.Arama {
+    width: 48px;
+    height: 40px;
+    top: 3px;
+    right: 3px;
+    color: #fff;
+    border: 0;
+    margin: 0 !important;
+    padding: 0;
+    cursor: pointer;
+    background: #00bff3
+}
+
+.YeniUye {
+    color: #fff;
+    font-weight: 700;
+    font-family: Open Sans,sans-serif;
+    filter: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    text-shadow: none;
+    background: #3c3c3c;
+    -webkit-transition: .2s linear;
+    -moz-transition: .2s linear;
+    transition: .2s linear;
+}
+
+.Giris {
+    color: #fff;
+    font-weight: 700;
+    font-family: Open Sans,sans-serif;
+    filter: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    text-shadow: none;
+    background: #00bff3;
+    -webkit-transition: .2s linear;
+    -moz-transition: .2s linear;
+    transition: .2s linear;
+    margin-bottom: 5px;
+}
+
+.Kutu{
+    background: #fff;
+    box-shadow: none;
+    border: 1px solid #b7b7b7;
+    border-radius: 0;
+    color: #555;
+    margin-bottom:5px;
+}
+
+.Ortala{
+    text-align:center;
+}

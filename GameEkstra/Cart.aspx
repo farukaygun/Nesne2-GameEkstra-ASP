@@ -2,10 +2,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div id="cartDetail">
         <div>
-            <asp:ListView ID="listViewCart" runat="server"></asp:ListView>
-        </div>
-        <div>
-            <asp:Button ID="btnSumbit" runat="server" Text="Alışverişi Tamamla" />
+            <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource1">
+            </asp:GridView>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:GameEkstraDatabaseConnectionString %>" SelectCommand="SELECT [name], [price] FROM [tblSepet]"></asp:SqlDataSource>
+            <asp:Label ID="Label1" runat="server" Text="Toplam:"></asp:Label><asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
         </div>
     </div>
-</asp:Content>
+            <asp:Button ID="btnSumbit" runat="server" Text="Alışverişi Tamamla" OnClick="btnSumbit_Click" /><asp:Button ID="btnTemizle" runat="server" Text="Sepeti Boşalt" OnClick="btnTemizle_Click" />
+        </asp:Content>

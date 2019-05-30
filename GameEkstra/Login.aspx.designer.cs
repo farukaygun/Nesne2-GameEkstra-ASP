@@ -22,6 +22,15 @@ namespace GameEkstra {
         protected global::System.Web.UI.WebControls.Label lblUyeGirisi;
         
         /// <summary>
+        /// Label1 denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik üretilmiş alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
+        
+        /// <summary>
         /// textBoxEmail denetimi.
         /// </summary>
         /// <remarks>
@@ -29,6 +38,15 @@ namespace GameEkstra {
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox textBoxEmail;
+        
+        /// <summary>
+        /// Label2 denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik üretilmiş alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
         /// textBoxSifre denetimi.
